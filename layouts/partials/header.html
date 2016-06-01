@@ -12,4 +12,13 @@
 <header>
 <a href="http://www.uib.no/"><img class="uib-logo" src="{{.Site.BaseURL}}img/uib-logo.svg" alt="UiB"></a>
 <h1><a href="{{.Site.BaseURL}}">{{ .Site.Title }}</a></h1>
+
+<nav>
+<ul>
+{{ range .Site.Menus.main }}
+  <li><a href="{{.URL}}">{{.Name}}</a>
+{{ end }}
+</ul>
+</nav>
+
 </header>

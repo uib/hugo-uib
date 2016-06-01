@@ -52,6 +52,16 @@ header a {
     text-decoration: none;
 }
 
+header nav li {
+    display: inline-block;
+    margin-right: 2ex;
+    text-transform: uppercase;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
 footer {
     padding: 0.2rem 2rem;
     font-size: smaller;
